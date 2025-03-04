@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travenly - Explore the World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                Travenly
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="active">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M9 22V12h6v10" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Dashboard
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Discover
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M2 7v10l10 5 10-5V7l-10-5L2 7z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 12L2 7m10 5l10-5m-10 5v10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Tickets
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        Favorite
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        Message
+                        <span class="notification-badge">1</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M2 10h20M7 15h2" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        Transaction
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                        Settings
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="discount-banner">
+                <div class="banner-content">
+                    <h3>50% Discount!</h3>
+                    <p>Get best discounts on certain days & don't miss it</p>
+                </div>
+                <svg class="arrow-right" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <button class="logout-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Logout
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="greeting">
+                    <h1>Hello, Raffialdo! 👋</h1>
+                    <p>Welcome back and explore the world</p>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Search your destination" class="search-input">
+                    <button class="filter-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="search-btn">Search</button>
+                    <div class="notification-bell">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M13.73 21a2 2 0 01-3.46 0" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+
+            <section class="discover-world">
+                <div class="section-header">
+                    <h2>Discover World 🌈</h2>
+                    <a href="#" class="view-all-link">
+                        View all
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="discover-tabs">
+                    <div class="discover-tab active">Popular Places</div>
+                    <div class="discover-tab">Recommended</div>
+                    <div class="discover-tab">Near Me</div>
+                </div>
+
+                <div class="popular-places">
+                    <div class="place-card">
+                        <img src="https://img.freepik.com/free-vector/green-nature-landscape-background_1308-30205.jpg" alt="Mt. Merbabu">
+                        <div class="place-details">
+                            <h3>Mt. Merbabu</h3>
+                            <p>Semarang, Indonesia</p>
+                            <span class="price">$450/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <img src="https://media.istockphoto.com/id/2151387111/vector/idyllic-mountain-landscape-with-stream.jpg?s=612x612&w=0&k=20&c=Ol-e3Me_roaEYJyfwc42741xxCovuyXfa1DGsWMvYrg=" alt="Mt. Mandala">
+                        <div class="place-details">
+                            <h3>Mt. Mandala</h3>
+                            <p>Papua, Indonesia</p>
+                            <span class="price">$570/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <img src="https://media.istockphoto.com/id/896064774/vector/beautiful-mountain-landscape.jpg?s=612x612&w=0&k=20&c=Sg5H4Se8qd__H9ApFL5ONRo7Bz9UlQetRiV_1Ko0YRM=" alt="Mt. Semeru">
+                        <div class="place-details">
+                            <h3>Mt. Semeru</h3>
+                            <p>Malang, Indonesia</p>
+                            <span class="price">$690/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-dates">
+                    <div class="section-header">
+                        <h2>Event Dates 🚀</h2>
+                        <a href="#" class="view-all">View all
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="date-calendar">
+                        <div class="date-item">
+                            <span class="day-name">Mon</span>
+                            <span class="date">12 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Tue</span>
+                            <span class="date">13 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Wed</span>
+                            <span class="date">14 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Thu</span>
+                            <span class="date">15 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Fri</span>
+                            <span class="date">16 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Sat</span>
+                            <span class="date">17 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Sun</span>
+                            <span class="date">18 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Mon</span>
+                            <span class="date">19 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Tue</span>
+                            <span class="date">20 Aug</span>
+                        </div>
+                        <div class="date-item">
+                            <span class="day-name">Wed</span>
+                            <span class="date">21 Aug</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-places">
+                    <div class="place-card small">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqvPfPhB3YbrwlZKPICoMVlceTaIOpg-4Nw&s" alt="Mt. Kerinci">
+                        <div class="place-details">
+                            <h3>Mt. Kerinci</h3>
+                            <p>Jambi, Indonesia</p>
+                            <span class="price">$320/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="heart-circle">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://media.istockphoto.com/id/1301140228/vector/beautiful-hilly-landscape.jpg?s=612x612&w=0&k=20&c=CjxfnEIewO_fOA22sV9-eou2IbSLhab8QvTMramohrc=" alt="Mt. Slamet">
+                        <div class="place-details">
+                            <h3>Mt. Slamet</h3>
+                            <p>Tegal, Indonesia</p>
+                            <span class="price">$560/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuI80kqe-dNLsVa1CE7F_zsKlqVaxFzk7AM8zoxt_H_-4pnWcBTRBAm2eT7eiVgzfftdU&usqp=CAU" alt="Mt. Latuk">
+                        <div class="place-details">
+                            <h3>Mt. Latuk</h3>
+                            <p>Kalimantan, Indonesia</p>
+                            <span class="price">$440/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://media.istockphoto.com/id/531242568/vector/idyllic-landscape.jpg?s=612x612&w=0&k=20&c=uhOPDMPS6EMH1tedVeNQZonb4tuiglHkDpQQ-4jh7gg=" alt="Mt. Cereme">
+                        <div class="place-details">
+                            <h3>Mt. Cereme</h3>
+                            <p>Majalengka, Indonesia</p>
+                            <span class="price">$680/day</span>
+                        </div>
+                        <div class="checkmark-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21l-1.45-1.3C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-header">
+                <h2>My Profile</h2>
+            </div>
+            
+            <div class="profile-avatar">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJedRXBcc8VR6blNm2EtcHgPGQ_x3fegWhXQ&s" alt="Raffialdo Bayu">
+            </div>
+            
+            <div class="profile-info">
+                <h3>Raffialdo Bayu</h3>
+                <p>Traveling Lover</p>
+            </div>
+
+            <div class="destination-trips">
+                <h3>Destination Trip</h3>
+                <div class="trip-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX63uKjgw-5ACDFi9Xc4jC0fatZ6dGQVraSWpUe8oSTTolUkjpX2pVRuU&s" alt="Mt. Gambuta">
+                    <div class="trip-details">
+                        <h4>Mt. Gambuta</h4>
+                        <p>14 August 2022</p>
+                        <div class="trip-people">
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="trip-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiGyg6pHdGh5Jm1L_QA_oMEpIszzwGsNRtbGxinohruMhEJ-qDzis3lootDGdnvv-5qv_Dfg&s" alt="Mt. Sindoro">
+                    <div class="trip-details">
+                        <h4>Mt. Sindoro</h4>
+                        <p>21 August 2022</p>
+                        <div class="trip-people">
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <ul>
+            <li><i class="icon-dashboard"></i></li>
+            <li><i class="icon-discover"></i></li>
+            <li><i class="icon-tickets"></i></li>
+            <li><i class="icon-favorite"></i></li>
+            <li><i class="icon-settings"></i></li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
