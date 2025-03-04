@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travenly - Explore the World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">Travenly</div>
+            <nav class="navigation">
+                <ul>
+                    <li class="active"><i class="icon-dashboard"></i> Dashboard</li>
+                    <li><i class="icon-discover"></i> Discover</li>
+                    <li><i class="icon-tickets"></i> Tickets</li>
+                    <li><i class="icon-favorite"></i> Favorite</li>
+                    <li>
+                        <i class="icon-message"></i> Message 
+                        <span class="notification-badge">1</span>
+                    </li>
+                    <li><i class="icon-transaction"></i> Transaction</li>
+                    <li><i class="icon-settings"></i> Settings</li>
+                </ul>
+            </nav>
+            
+            <div class="discount-banner">
+                <div class="banner-content">
+                    <h3>50% Discount!</h3>
+                    <p>Get best discounts on certain days & don't miss it</p>
+                </div>
+            </div>
+            
+            <button class="logout-btn">Logout</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="greeting">
+                    <h1>Hello, Raffialdo! 👋</h1>
+                    <p>Welcome back and explore the world</p>
+                </div>
+                <div class="search-container">
+                    <i class="fas fa-search" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%);"></i>
+                    <input type="text" placeholder="Search your destination" class="search-input">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="notification-bell">
+                    <i class="fas fa-bell"></i>
+                </div>
+            </header>
+
+            <section class="discover-world">
+                <div class="section-header">
+                    <h2>Discover World 🌈</h2>
+                    <div class="view-tabs">
+                        <span class="active">Popular Places</span>
+                        <span>Recommended</span>
+                        <span>Near Me</span>
+                        <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="popular-places">
+                    <div class="place-card">
+                        <img src="https://img.freepik.com/free-vector/green-nature-landscape-background_1308-30205.jpg" alt="Mt. Merbabu">
+                        <div class="place-details">
+                            <h3>Mt. Merbabu</h3>
+                            <p>Semarang, Indonesia</p>
+                            <span class="price">$450/day</span>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <img src="https://media.istockphoto.com/id/2151387111/vector/idyllic-mountain-landscape-with-stream.jpg?s=612x612&w=0&k=20&c=Ol-e3Me_roaEYJyfwc42741xxCovuyXfa1DGsWMvYrg=" alt="Mt. Mandala">
+                        <div class="place-details">
+                            <h3>Mt. Mandala</h3>
+                            <p>Papua, Indonesia</p>
+                            <span class="price">$570/day</span>
+                        </div>
+                    </div>
+                    <div class="place-card">
+                        <img src="https://media.istockphoto.com/id/896064774/vector/beautiful-mountain-landscape.jpg?s=612x612&w=0&k=20&c=Sg5H4Se8qd__H9ApFL5ONRo7Bz9UlQetRiV_1Ko0YRM=" alt="Mt. Semeru">
+                        <div class="place-details">
+                            <h3>Mt. Semeru</h3>
+                            <p>Malang, Indonesia</p>
+                            <span class="price">$690/day</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-dates">
+                    <div class="section-header">
+                        <h2>Event Dates 🚀</h2>
+                        <a href="#" class="view-all">View all</a>
+                    </div>
+                    <div class="date-calendar">
+                        <span>12</span>
+                        <span>13</span>
+                        <span class="active">14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                    </div>
+                </div>
+
+                <div class="additional-places">
+                    <div class="place-card small">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIqvPfPhB3YbrwlZKPICoMVlceTaIOpg-4Nw&s" alt="Mt. Kerinci">
+                        <div class="place-details">
+                            <h3>Mt. Kerinci</h3>
+                            <p>Jambi, Indonesia</p>
+                            <span class="price">$320/day</span>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://media.istockphoto.com/id/1301140228/vector/beautiful-hilly-landscape.jpg?s=612x612&w=0&k=20&c=CjxfnEIewO_fOA22sV9-eou2IbSLhab8QvTMramohrc=" alt="Mt. Slamet">
+                        <div class="place-details">
+                            <h3>Mt. Slamet</h3>
+                            <p>Tegal, Indonesia</p>
+                            <span class="price">$560/day</span>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuI80kqe-dNLsVa1CE7F_zsKlqVaxFzk7AM8zoxt_H_-4pnWcBTRBAm2eT7eiVgzfftdU&usqp=CAU" alt="Mt. Latuk">
+                        <div class="place-details">
+                            <h3>Mt. Latuk</h3>
+                            <p>Kalimantan, Indonesia</p>
+                            <span class="price">$440/day</span>
+                        </div>
+                    </div>
+                    <div class="place-card small">
+                        <img src="https://media.istockphoto.com/id/531242568/vector/idyllic-landscape.jpg?s=612x612&w=0&k=20&c=uhOPDMPS6EMH1tedVeNQZonb4tuiglHkDpQQ-4jh7gg=" alt="Mt. Cereme">
+                        <div class="place-details">
+                            <h3>Mt. Cereme</h3>
+                            <p>Majalengka, Indonesia</p>
+                            <span class="price">$680/day</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <div class="profile-card">
+                <div class="profile-avatar">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJedRXBcc8VR6blNm2EtcHgPGQ_x3fegWhXQ&s" alt="Raffialdo Bayu">
+                </div>
+                <div class="profile-info">
+                    <h2>Raffialdo Bayu</h2>
+                    <p>Traveling Lover</p>
+                </div>
+            </div>
+
+            <div class="destination-trips">
+                <h3>Destination Trip</h3>
+                <div class="trip-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX63uKjgw-5ACDFi9Xc4jC0fatZ6dGQVraSWpUe8oSTTolUkjpX2pVRuU&s" alt="Mt. Gambuta">
+                    <div class="trip-details">
+                        <h4>Mt. Gambuta</h4>
+                        <p>14 August 2022</p>
+                    </div>
+                </div>
+                <div class="trip-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiGyg6pHdGh5Jm1L_QA_oMEpIszzwGsNRtbGxinohruMhEJ-qDzis3lootDGdnvv-5qv_Dfg&s" alt="Mt. Sindoro">
+                    <div class="trip-details">
+                        <h4>Mt. Sindoro</h4>
+                        <p>21 August 2022</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
